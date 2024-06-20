@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment System</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #0088cc, #003366) fixed;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-width: 800px; 
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            max-width: 150px; 
+        }
+
+        h2 {
+            color: #0088cc;
+            margin-bottom: 20px;
+            font-size: 28px;
+            text-align: center; 
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            width: 150px; 
+            height: 150px; 
+            margin: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-primary {
+            background-color: #0088cc;
+            border: 2px solid #0088cc; 
+            color: #fff; 
+        }
+
+        .btn-primary:hover {
+            background-color: #005580;
+            border: 2px solid #005580; 
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Doctor Appointment System" class="logo">
+        <h2>Doctor Appointment System</h2>
+
+        <div class="button-container">
+            <a href="signup.php" class="btn btn-primary">Register as Hospital</a>
+            <a href="login.php" class="btn btn-secondary">Login as Hospital</a>
+            <a href="patient_signup.php" class="btn btn-primary">Register as Patient</a>
+            <a href="patient_login.php" class="btn btn-secondary">Login as Patient</a>
+        </div>
+    </div>
+</body>
+</html>
